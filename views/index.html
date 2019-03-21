@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FCC Message Board</title>
+    <meta name="description" content="A message board for all things message">    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./public/style.css">
+  </head>
+  <body>
+    <h1>The freeCodeCamp Message Board</h1>
+    <div id="main-text-container">
+      <div id="input-box">
+        <h3>Add New Thread</h3>
+        <form id="newThread" autocomplete="off" action="/api/threads/board" method="post">
+          <input type="text" class="new-thread" name="board" placeholder="Board" required data-lpignore="true"><br>
+          <textarea type="text" class="new-thread" name="text" placeholder="Enter thread text" required></textarea><br>
+          <input type="text" class="new-thread" name="delete_password" placeholder="Password to delete" required data-lpignore="true"><br>
+          <button type="submit"><b>Submit New Thread</b></button>
+        </form>
+      </div>
+      <div id="board-box">
+        <h3>Message Boards</h3>
+        <div id="message-board-list"></div>
+      </div>
+    </div>
+    <script src="./public/client.js"></script>
+  </body>
+</html>
