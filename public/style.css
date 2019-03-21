@@ -1,0 +1,108 @@
+html {
+  --title-font: 'Roboto', sans-serif;
+  --text-font: 'Raleway', sans-serif;
+  --main-background-color: #ef5455;
+  --container-background-color: #2b3252;
+  --input-background-color: #fad744;
+  --title-color: #fad744;  
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h1, h3 {
+  color: var(--title-color);
+  text-align: center;
+  font-family: var(--title-font)
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: var(--text-font)  
+}
+
+#main-text-container {  
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 45%;
+  margin-right: auto;
+  margin-left: auto;
+    
+}
+
+#input-box {
+  box-sizing: border-box;
+  border-radius: 15px;
+  width: 48%;
+  background-color: var(--container-background-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.new-thread {
+  font-family: var(--text-font);
+  color: var(--container-background-color);
+  background-color: var(--input-background-color);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 5px 5px 10px;
+  border: 2px solid var(--main-background-color);
+}
+
+textarea {
+  resize: none;
+  width: 250px;
+  height: 100px;
+}
+
+button:hover {
+  background-color: var(--title-color);
+  color: var(--main-background-color);
+  border: 2px solid var(--main-background-color);
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--main-background-color);
+  color: var(--title-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid var(--title-color);  
+}
+
+a:hover {
+  color: var(--title-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  color: var(--main-background-color);
+  font-family: var(--text-font);
+  display: block;
+  text-decoration: none;
+}
+
+#board-box {
+  box-sizing: border-box;
+  border-radius: 15px;  
+  background-color: var(--container-background-color);
+  width: 48%;
+  padding-bottom: 24px;
+}
+
+#message-board-list {
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;  
+}
+
